@@ -46,6 +46,11 @@ export class Blank extends React.Component {
             }}
             style={styles.Image_15}
           />
+          <Button
+            title="View More"
+            color="#ff3341"
+            onPress={() => this.props.navigation.navigate("BlankScreen2183017")}
+          />
         </View>
         <View style={styles.View_13}>
           <Image
@@ -70,14 +75,15 @@ const styles = StyleSheet.create({
   View_11: { width: "92%", height: "0%", flexDirection: "row" },
   View_12: {
     width: "50%",
-    height: 50,
+    height: 160,
     alignSelf: "center",
     alignContent: "center"
   },
   Image_15: { height: 50 },
+  Button_21: {},
   View_13: {
     width: "50%",
-    height: 50,
+    height: 160,
     alignSelf: "center",
     alignItems: "center"
   },
