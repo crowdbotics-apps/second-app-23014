@@ -7,6 +7,13 @@ class Products(models.Model):
     shoes = models.CharField(
         max_length=256,
     )
+    sneaker = models.ForeignKey(
+        "storeapp.Product",
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+        related_name="products_sneaker",
+    )
 
 
 class Product(models.Model):
